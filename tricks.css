@@ -1,0 +1,30 @@
+/** Hover effects
+ ** ******************************************** **/
+.hover-affected-item-wrap { overflow: hidden; }
+
+.hover-area .hover-affected-item {
+	overflow: hidden;
+	-webkit-transition: all .2s ease-in-out;
+	-moz-transition: all .2s ease-in-out;
+	-o-transition: all .2s ease-in-out;
+	-ms-transition: all .2s ease-in-out;
+	transition: all .2s ease-in-out;
+}
+
+.hover-area:hover .hover-affected-item  {
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);	
+}
+
+/* Example in HTML:
+<div class="hover-area hover-affected-item-wrap">
+   <a href="URL">
+      <img class="img-responsive hover-affected-item" src="URI">
+   </a>
+</div>
+*/
+
+/* @NOTE: область .hover-area может совпадать с областью .hover-affected-item-wrap, а может и нет */

@@ -28,3 +28,28 @@
 */
 
 /* @NOTE: область .hover-area может совпадать с областью .hover-affected-item-wrap, а может и нет */
+
+
+
+
+/** FIX for in-table-OWL carousel */
+ ** ******************************************** **/
+
+/* @NOTE: from http://stackoverflow.com/questions/21230184/owl-carousel-inside-a-table-cell-parent-makes-parent-to-expand-weird */
+	.display_table {  
+		display: table;
+		width: 100%;
+		table-layout: fixed;
+		border-spacing: 0;
+		position: relative;
+	}
+	.display_tablerow {    
+		width: 100%;
+		display: table-row;
+		position: relative;
+	}
+	.display_tablecell {
+		display: table-cell;
+		position: relative;
+	}
+
